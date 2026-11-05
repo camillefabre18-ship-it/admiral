@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+   	"$basetexture" "models/pet/melisa/face"
+   	//"$translucent" "1"
+   	"$alphatest" "1"
+}
