@@ -1,0 +1,181 @@
+// Reminder: Ensure "admiral" is added to the Database file for player registration across servers.
+
+"Admiral Menu"
+{
+	"Admiral Rules"
+	{
+		"1"	"Be respectful to other players"
+		"2"	"Be humble and never abuse your access"
+		"3"	"Do not impersonate other players"
+		"4"	"Never use cheats, scripts, or exploits"
+		"5"	"Help keep games fair and balanced"
+		"6"	"Follow and respect the server rules"
+		"7"	"Admiral access can be removed if abused"
+	}
+
+
+	"Admiral Tags"
+	{
+		"1"
+		{
+			"name"		"Admiral"
+			"reputation"	"100"
+		}
+
+		"2"
+		{
+			"name"		"Veteran"
+			"reputation"	"200"
+		}
+
+		"3"
+		{
+			"name"		"Supporter"
+			"reputation"	"300"
+		}
+
+		"4"
+		{
+			"name"		"Loyal"
+			"reputation"	"400"
+		}
+
+		"5"
+		{
+			"name"		"Legend"
+			"reputation"	"500"
+		}
+
+		"6"
+		{
+			"name"		"OI Elite"
+			"reputation"	"1000"
+		}
+	}
+
+	"How to Earn Reputation"
+	{
+  		"1"	"Use !rep or !thanks to reward helpful players"
+   		"2"	"Earn +rep when others thank you"
+		"3"	"Completing Daily Challenges can earns +rep"
+  		"4"	"Donating can also earn you +rep"
+  		"5"	"Redeem reputation for Admiral time from !myrep"
+	}
+
+	"Reputation Redeem"
+	{
+		"1"
+		{
+			"cost"		"10"
+			"hours"		"24"
+			"display"	"1 Day"
+		}
+
+		"2"
+		{
+			"cost"		"25"
+			"hours"		"72"
+			"display"	"3 Days"
+		}
+
+		"3"
+		{
+			"cost"		"50"
+			"hours"		"168"
+			"display"	"7 Days"
+		}
+
+		"4"
+		{
+			"cost"		"100"
+			"hours"		"720"
+			"display"	"30 Days"
+		}
+
+		"5"
+		{
+			"cost"		"500"
+			"hours"		"4320"
+			"display"	"180 Days"
+		}
+	
+
+		"6"
+		{
+			"cost"		"1000"
+			"hours"		"-1"
+			"display"	"Permanent"
+		}
+	}
+
+	// Daily Challenges: one challenge per day of the week, repeats weekly.
+	// "type" must be one of: commons_kill, charger_level, hunter_skeet, kit_heal, witch_kill, tank_damage, infected_kill
+	// "target" is the number to reach (kill/heal count, or total damage for tank_damage).
+	// "reward_hours" and "reward_rep" are granted once, the moment the target is reached that day.
+	// Edit any of these freely and run sm_admiral_reload - no recompiling needed.
+	"Daily Challenges"
+	{
+		"Sunday"
+		{
+			"name"			"Commons Cleaner"
+			"type"			"commons_kill"
+			"target"		"250"
+			"reward_hours"	"6"
+			"reward_rep"	"1"
+		}
+
+		"Monday"
+		{
+			"name"			"Charger Leveler"
+			"type"			"charger_level"
+			"target"		"5"
+			"reward_hours"	"12"
+			"reward_rep"	"1"
+		}
+
+		"Tuesday"
+		{
+			"name"			"Hunter Skeet"
+			"type"			"hunter_skeet"
+			"target"		"5"
+			"reward_hours"	"12"
+			"reward_rep"	"1"
+		}
+
+		"Wednesday"
+		{
+			"name"			"Field Medic"
+			"type"			"kit_heal"
+			"target"		"15"
+			"reward_hours"	"24"
+			"reward_rep"	"1"
+		}
+
+		"Thursday"
+		{
+			"name"			"Witch Slayer"
+			"type"			"witch_kill"
+			"target"		"5"
+			"reward_hours"	"36"
+			"reward_rep"	"2"
+		}
+
+		"Friday"
+		{
+			"name"			"Tank Buster"
+			"type"			"tank_damage"
+			"target"		"25000"
+			"reward_hours"	"48"
+			"reward_rep"	"2"
+		}
+
+		"Saturday"
+		{
+			"name"			"Special Forces"
+			"type"			"infected_kill"
+			"target"		"50"
+			"reward_hours"	"48"
+			"reward_rep"	"1"
+		}
+	}
+}
