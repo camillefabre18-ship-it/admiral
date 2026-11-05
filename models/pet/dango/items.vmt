@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+   	"$basetexture" "models/pet/dango/items"
+   	//"$translucent" "1"
+   	"$alphatest" "1"
+}
